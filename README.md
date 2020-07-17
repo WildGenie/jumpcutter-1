@@ -1,11 +1,11 @@
 # jumpcutter
-Automatically edits videos. Explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw
+Automatically edits videos. Explanation here: <https://www.youtube.com/watch?v=DQ8orIurGxw>
 
-## Some heads-up:
+## Some heads-up
 
 It uses Python 3.
 
-It works on Ubuntu 16.04 and Windows 10. (It might work on other OSs too, we just haven't tested it yet.)
+It works on Ubuntu 16.04, macOS 10.15, and Windows 10. (It might work on other OSs too, we just haven't tested it yet.)
 
 This program relies heavily on ffmpeg. It will start subprocesses that call ffmpeg, so be aware of that!
 
@@ -16,6 +16,9 @@ I have processed 17-minute videos completely fine, but be wary if you're gonna g
 I want to use pyinstaller to turn this into an executable, so non-techy people
 can use it EVEN IF they don't have Python and all those libraries. Jabrils 
 recommended this to me. However, my pyinstaller build did not work. :( HELP
+
+## Installing required libraries
+`pip install -r requirements.txt` to install all requirements. If it does not install, try with `pip3` instead
 
 ## Building with nix
 `nix-build` to get a script with all the libraries and ffmpeg, `nix-build -A bundle` to get a single binary.
